@@ -2,7 +2,7 @@
 
 const questions = [
     {
-      "question": "What was your favorite subject in HS",
+      "question": "What was your favorite subject in high school?",
       "answer1": "Art",
       "answer1Total": "1",
       "answer2": "Math",
@@ -11,7 +11,7 @@ const questions = [
       "answer3Total": "3"
     },
     {
-      "question": "If you could take a peek under the “hood” of any code whose would it be:",
+      "question": "If you could take a peek under the “hood” of any code whose would it be?",
       "answer1": "ESPN Sports Statistics",
       "answer1Total": "2",
       "answer2": "Facebook",
@@ -21,10 +21,10 @@ const questions = [
     },
     {
       "question":
-        "Of the following what movie do you like:",
-      "answer1": "Wes Anderson’s Moonrise Kingdom",
+        "Of the following movie types which do you like best?",
+      "answer1": "Art House Film",
       "answer1Total": "1",
-      "answer2": "Matrix",
+      "answer2": "Action Movie",
       "answer2Total": "3",
       "answer3": "A Documentary",
       "answer3Total": "2"
