@@ -30,31 +30,13 @@ const questions = [
       "answer3Total": "2"
     },
     {
-      "question": "Spend your time doing:",
-      "answer1": "A puzzle",
-      "answer1Total": "3",
-      "answer2": "Answering questions on the internet",
-      "answer2Total": "2",
-      "answer3":"Or writing a story.",
-      "answer3Total": "1"
-    },
-    {
-      "question": "When you see a building you:",
+      "question": "When you see a grand building you:",
       "answer1": "Admire the outside.",
       "answer1Total": "1",
-      "answer2": "Wonder what happens inside",
+      "answer2": "Wonder what happens inside.",
       "answer2Total": "2",
-      "answer3": "Think about how it was built",
+      "answer3": "Think about how it was built.",
       "answer3Total": "3"
-    },
-    {
-      "question": "I like to build something that will last for ages, even if it takes time.",
-      "answer1": "Yes",
-      "answer1Total": "3",
-      "answer2": "Kinda - Not building the great Pyramids",
-      "answer2Total": "2",
-      "answer3": "No",
-      "answer3Total": "1"
     },
     {
       "question": "What kind of Company would you like to work for:",
@@ -66,20 +48,29 @@ const questions = [
       "answer3Total": "1"
     },
     {
-      "question": "What Annoys you most:",
+        "question": "Of the following activities which do you like the most?",
+        "answer1": "Doing a Soduko puzzle.",
+        "answer1Total": "3",
+        "answer2": "Visiting an art gallery.",
+        "answer2Total": "2",
+        "answer3":"Building with Lego",
+        "answer3Total": "1"
+      },
+    {
+      "question": "Which one of these situations annoys you the most?",
       "answer1": "A website where the buttons are in the wrong spot",
-      "answer1Total": "3",
+      "answer1Total": "1",
       "answer2": "Things not working right",
-      "answer2Total": "2",
+      "answer2Total": "3",
       "answer3": "Not finding the answers to your questions",
-      "answer3Total": "1"
+      "answer3Total": "2"
     },
     {
       "question": "Would your friend describe you you as:",
-      "answer1": "Skeptical",
-      "answer1Total": "2",
+      "answer1": "Creative",
+      "answer1Total": "1",
       "answer2": "Storyteller",
-      "answer2Total": "1",
+      "answer2Total": "2",
       "answer3": "Problem Solver",
       "answer3Total": "3"
     },
@@ -175,10 +166,10 @@ const questions = [
            <div class="summary">
               <h1>Summary</h1>
               <p>Possible Pathway options. Remeber this is just for fun. Pick the best option for yourself.</p>
-              <p>15 - 21- Application Development with C#</p>
-              <p>10 - 15 - Data Analytics with Python</p>
-              <p>5 - 10 - Front End with Javascript </p>
-              <p>5 - Neo?</p>
+              <p>30 - 39 - Application Development with C#</p>
+              <p>20 - 29 - Data Analytics with Python</p>
+              <p>10 - 19 - Front End with Javascript </p>
+              <p>0 -  9 - Neo?</p>
           </div>
            `;
           return;
