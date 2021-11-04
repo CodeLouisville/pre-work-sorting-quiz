@@ -166,8 +166,8 @@ const questions = [
            <div class="summary">
               <h1>Summary</h1>
               <p>Possible Pathway options. Remeber this is just for fun. Pick the best option for yourself.</p>
-              <p>30 - 39 - Application Development with C#</p>
-              <p>20 - 29 - Data Analytics with Python</p>
+              <p>21 - 30 - Application Development with C#</p>
+              <p>15 - 24 - Data Analytics with Python</p>
               <p>10 - 19 - Front End with Javascript </p>
               <p>0 -  9 - Neo?</p>
           </div>
