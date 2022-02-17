@@ -8,7 +8,9 @@ const questions = [
       "answer2": "Math",
       "answer2Total": "2",
       "answer3": "Science",
-      "answer3Total": "3"
+      "answer3Total": "3",
+      "answer4": "English",
+      "answer4Total": "1"
     },
     {
       "question": "If you could take a peek under the “hood” of any code whose would it be?",
@@ -17,7 +19,9 @@ const questions = [
       "answer2": "Facebook",
       "answer2Total": "1",
       "answer3": "CERN Collider",
-      "answer3Total": "3"
+      "answer3Total": "3",
+      "answer4": "Airbnb",
+      "answer4Total": "1"
     },
     {
       "question":
@@ -27,7 +31,9 @@ const questions = [
       "answer2": "Action Movie",
       "answer2Total": "3",
       "answer3": "A Documentary",
-      "answer3Total": "2"
+      "answer3Total": "2",
+      "answer4": "Psychological thriller",
+      "answer4Total": "2"
     },
     {
       "question": "When you see a grand building you:",
@@ -36,7 +42,9 @@ const questions = [
       "answer2": "Wonder what happens inside.",
       "answer2Total": "2",
       "answer3": "Think about how it was built.",
-      "answer3Total": "3"
+      "answer3Total": "3",
+      "answer4": "Think about how all the parts fit together",
+      "answer4Total": "0"
     },
     {
       "question": "What kind of Company would you like to work for:",
@@ -45,17 +53,21 @@ const questions = [
       "answer2": "Startup",
       "answer2Total": "2",
       "answer3": "Agency",
-      "answer3Total": "1"
+      "answer3Total": "1",
+      "answer4": "Mission Driven",
+      "answer4Total": "1"
     },
     {
-        "question": "Of the following activities which do you like the most?",
-        "answer1": "Doing a Soduko puzzle.",
-        "answer1Total": "3",
-        "answer2": "Visiting an art gallery.",
-        "answer2Total": "2",
-        "answer3":"Building with Lego",
-        "answer3Total": "1"
-      },
+      "question": "Of the following activities which do you like the most?",
+      "answer1": "Doing a Soduko puzzle.",
+      "answer1Total": "3",
+      "answer2": "Visiting an art gallery.",
+      "answer2Total": "2",
+      "answer3":"Building with Lego",
+      "answer3Total": "1",
+      "answer4": "Reading a novel",
+      "answer4Total": "0"
+    },
     {
       "question": "Which one of these situations annoys you the most?",
       "answer1": "A website where the buttons are in the wrong spot",
@@ -63,7 +75,9 @@ const questions = [
       "answer2": "Things not working right",
       "answer2Total": "3",
       "answer3": "Not finding the answers to your questions",
-      "answer3Total": "2"
+      "answer3Total": "2",
+      "answer4": "Having to search for the things you need",
+      "answer4Total": "1"
     },
     {
       "question": "Would your friend describe you you as:",
@@ -72,7 +86,9 @@ const questions = [
       "answer2": "Storyteller",
       "answer2Total": "2",
       "answer3": "Problem Solver",
-      "answer3Total": "3"
+      "answer3Total": "3",
+      "answer4": "Big Picture",
+      "answer4Total": "0"
     },
     {
       "question": "Which one of the following would you like to build a competitor for:",
@@ -81,7 +97,9 @@ const questions = [
       "answer2": "Yahoo Stocks",
       "answer2Total": "2",
       "answer3": "Microsoft Office",
-      "answer3Total": "3"
+      "answer3Total": "3",
+      "answer4": "Imgur",
+      "answer4Total": "1"
       
      },
     {
@@ -91,7 +109,9 @@ const questions = [
       "answer2": "2048",
       "answer2Total": "3",
       "answer3": "Candy Crush",
-      "answer3Total": "1"
+      "answer3Total": "1",
+      "answer4": "Assassin's Creed 2",
+      "answer4Total": "1"
     } 
      
     
@@ -108,6 +128,7 @@ const questions = [
   const option1 = document.querySelector('.option1');
   const option2 = document.querySelector('.option2');
   const option3 = document.querySelector('.option3');
+  const option4 = document.querySelector('.option4');
   const nextButton = document.querySelector('.next');
   const previousButton = document.querySelector('.previous');
   const restartButton = document.querySelector('.restart');
@@ -120,14 +141,17 @@ const questions = [
       const option1Total = questions[index].answer1Total;
       const option2Total = questions[index].answer2Total;
       const option3Total = questions[index].answer3Total;
+      const option4Total = questions[index].answer4Total;
       //Populate html elements 
       questionEl.innerHTML = `${index + 1}. ${question.question}`
       option1.setAttribute('data-total', `${option1Total}`);
       option2.setAttribute('data-total', `${option2Total}`);
       option3.setAttribute('data-total', `${option3Total}`);
+      option4.setAttribute('data-total', `${option4Total}`);
       option1.innerHTML = `${question.answer1}`
       option2.innerHTML = `${question.answer2}`
       option3.innerHTML = `${question.answer3}`
+      option4.innerHTML = `${question.answer4}`
   }
   
   
@@ -166,10 +190,11 @@ const questions = [
            <div class="summary">
               <h1>Summary</h1>
               <p>Possible Pathway options. Remeber this is just for fun. Pick the best option for yourself.</p>
-              <p>21 - 30 - Application Development with C#</p>
-              <p>15 - 24 - Data Analytics with Python</p>
-              <p>10 - 19 - Front End with Javascript </p>
-              <p>0 -  9 - Neo?</p>
+              <p>25 - 30 - Application Development with C#</p>
+              <p>15 - 25 - Data Analytics with Python</p>
+              <p>10 - 20 - Front End with Javascript</p>
+              <p>5 - 15 - User Exerience Pathway</p>
+              <p>0 - 5 - Neo?</p>
           </div>
            `;
           return;
